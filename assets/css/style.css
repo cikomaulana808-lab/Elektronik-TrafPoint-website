@@ -1,197 +1,73 @@
-/* Gambar background di semua halaman */
+/* style.css */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: url('../img/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+    background: url('background.jpg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  min-height: 100vh;
-  padding: 20px;
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 50, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 128, 0.8);
-  padding: 10px 20px;
+.navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav h1 {
-  color: white;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.navbar ul li a:hover {
+    color: orange;
 }
 
-.form-container {
-  max-width: 400px;
-  margin: 80px auto;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
+/* Konten utama */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
 }
 
-.form-container input, .form-container button {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: orange;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* ====== AUTH CONTAINER ====== */
-.auth-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url('../img/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.auth-box {
-  display: flex;
-  width: 800px;
-  max-width: 90%;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  overflow: hidden;
-}
-
-.auth-box.reverse {
-  flex-direction: row-reverse;
-}
-
-.auth-left, .auth-right {
-  flex: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.auth-left {
-  border-right: 1px solid #ddd;
-}
-
-.auth-right {
-  border-left: 1px solid #ddd;
-}
-
-/* ====== TITLE & TEXT ====== */
-.auth-left h1,
-.auth-right h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #333;
-}
-
-.text-small {
-  font-size: 14px;
-  color: #666;
-  margin: 10px 0;
-}
-
-/* ====== INPUT ====== */
-.auth-left form input {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-}
-
-.auth-left form input:focus {
-  border-color: #333;
-}
-
-/* ====== BUTTON ====== */
-.btn-primary {
-  width: 100%;
-  padding: 12px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.btn-primary:hover {
-  background: #555;
-}
-
-.btn-outline {
-  padding: 10px 20px;
-  border: 1px solid #333;
-  background: white;
-  color: #333;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn-outline:hover {
-  background: #333;
-  color: white;
-}
-
-/* ====== SOCIAL LOGIN ====== */
-.social-login {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.social-btn {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  background: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.social-btn:hover {
-  background: #f0f0f0;
-}
-
-.forgot {
-  display: block;
-  font-size: 12px;
-  margin-top: 8px;
-  color: #555;
-  text-decoration: none;
-}
-
-.forgot:hover {
-  text-decoration: underline;
+/* Footer */
+.footer {
+    background: rgba(0, 0, 50, 0.9);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
 }
