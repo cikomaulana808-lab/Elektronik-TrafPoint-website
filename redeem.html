@@ -1,0 +1,33 @@
+<!-- redeem.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redeem Poin</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Redeem Poin</h1>
+    <p>Total Poin Anda: <span id="userPoints">0</span></p>
+
+    <h2>Pilih Reward</h2>
+    <div class="reward-list">
+      <div class="reward-item">
+        <h3>Voucher 10k</h3>
+        <p>Butuh 200 poin</p>
+        <button onclick="redeemReward(200, 'Voucher 10k')">Redeem</button>
+      </div>
+
+      <div class="reward-item">
+        <h3>Voucher 25k</h3>
+        <p>Butuh 400 poin</p>
+        <button onclick="redeemReward(400, 'Voucher 25k')">Redeem</button>
+      </div>
+    </div>
+    <p id="redeemMessage"></p>
+  </div>
+</body>
+</html>
