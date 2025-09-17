@@ -60,3 +60,138 @@ nav ul li a {
   border-radius: 5px;
   text-decoration: none;
 }
+
+/* ====== AUTH CONTAINER ====== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.auth-box {
+  display: flex;
+  width: 800px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.auth-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.auth-left, .auth-right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-left {
+  border-right: 1px solid #ddd;
+}
+
+.auth-right {
+  border-left: 1px solid #ddd;
+}
+
+/* ====== TITLE & TEXT ====== */
+.auth-left h1,
+.auth-right h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.text-small {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* ====== INPUT ====== */
+.auth-left form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.auth-left form input:focus {
+  border-color: #333;
+}
+
+/* ====== BUTTON ====== */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background: #555;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #333;
+  color: white;
+}
+
+/* ====== SOCIAL LOGIN ====== */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background: #f0f0f0;
+}
+
+.forgot {
+  display: block;
+  font-size: 12px;
+  margin-top: 8px;
+  color: #555;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
