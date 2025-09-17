@@ -1,0 +1,30 @@
+<!-- laporan.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirim Laporan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Kirim Laporan</h1>
+    <form id="laporanForm">
+      <label for="judul">Judul Laporan:</label>
+      <input type="text" id="judul" name="judul" placeholder="Masukkan judul laporan" required>
+
+      <label for="deskripsi">Deskripsi:</label>
+      <textarea id="deskripsi" name="deskripsi" placeholder="Masukkan deskripsi laporan" required></textarea>
+
+      <label for="gambar">Upload Gambar:</label>
+      <input type="file" id="gambar" name="gambar" accept="image/*">
+
+      <button type="submit">Kirim Laporan</button>
+    </form>
+    <p id="laporanMessage"></p>
+    <a href="riwayat.html" class="btn-link">Lihat Riwayat Laporan</a>
+  </div>
+</body>
+</html>
